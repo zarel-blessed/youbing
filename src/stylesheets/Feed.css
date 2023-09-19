@@ -1,0 +1,117 @@
+main {
+  display: grid;
+  grid-template-columns: max(18%, 240px) repeat(4, 1fr);
+  height: 92vh;
+  background-color: #000;
+  color: white;
+}
+
+aside {
+  padding: 24px;
+  border-right: 2px #121212 dashed;
+  overflow-y: auto;
+}
+
+nav {
+  overflow-x: auto;
+}
+
+.feed {
+  grid-column: 2 / 6;
+  overflow-y: auto;
+}
+
+.feed nav {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 24px;
+}
+
+.feed .video-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25em;
+  flex-wrap: wrap;
+  padding: 0px 24px;
+}
+
+.container {
+  width: 240px;
+  flex-grow: 1;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #030000;
+  width: 100%;
+}
+
+.video-card .thumbnail {
+  display: flex;
+  align-items: center;
+}
+
+.video-card .thumbnail img {
+  flex: 1;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+.video-data {
+  padding: 10px;
+}
+
+.video-card a {
+  font-size: 0.825em;
+  font-weight: 500;
+  color: #cfcfcf;
+}
+
+.video-card .channel-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 0.2em;
+  font-weight: 700;
+  color: #999;
+}
+
+.channel-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2em;
+}
+
+.channel-card .container {
+  text-align: center;
+}
+
+.channel-card .container h2 {
+  color: #b6b6b6;
+  padding-block: 0.2em;
+}
+
+.channel-dp img {
+  height: 140px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.channel-card p {
+  color: #777;
+}
+
+.search-feed {
+  background-color: #000;
+}
+
+.video-container > .container:nth-child(48),
+.video-container > .container:nth-child(49),
+.video-container > .container:nth-child(50) {
+  width: 23.85%;
+  flex-grow: 0;
+}

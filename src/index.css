@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img,
+video,
+object,
+svg {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.category-btn {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #e3e3e3;
+
+  padding: 5px 15px;
+  margin: 15px 0px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  border: 1px solid #fa8314 !important;
+}
+
+.category-btn:hover .span {
+  color: #e3e3e3 !important;
+}
+
+.nav_category {
+  padding: 8px 16px;
+  background-color: #040404;
+  color: #e3e3e3;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+
+.nav_category:hover {
+  background-color: #111;
+}

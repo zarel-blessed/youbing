@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  inset: 0 0 auto 0;
+  padding: 16px 24px;
+  background-color: #040404;
+  color: #fcfcfc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 600;
+  color: #fcfcfc;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 5px 5px;
+  width: 350px;
+  background-color: #e3e3e3;
+  border-radius: 30px;
+}
+
+.search-field input {
+  flex: 1;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 0.875rem;
+}

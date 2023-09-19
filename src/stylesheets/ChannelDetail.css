@@ -1,0 +1,32 @@
+.channel-detail {
+  display: grid;
+  grid-template-columns: max(18%, 240px) repeat(4, 1fr);
+  height: 100vh;
+  background-color: black;
+}
+
+.channel-page {
+  grid-column: 2/6;
+  overflow-y: auto;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.channel-page .about-channel {
+  max-width: 800px;
+  color: #b9b9b9;
+  font-size: 0.875rem;
+}
+
+.video-container {
+  grid-column: 2/6;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25em;
+  flex-wrap: wrap;
+  padding: 0px 24px;
+}

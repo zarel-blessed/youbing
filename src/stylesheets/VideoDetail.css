@@ -1,0 +1,97 @@
+.video-details {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+.video-details .container {
+  display: flex;
+}
+
+.container .video-container {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 20%;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.container .video-container .container {
+  width: 100%;
+}
+
+.video-player-page {
+  flex: 1;
+  height: 95vh;
+  padding: 24px;
+  background-color: #000;
+}
+
+.react-player {
+  height: 75vh !important;
+  width: 100% !important;
+}
+
+.video-player-page h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: black;
+  color: #e0e0e0;
+  margin-block: 0.25em;
+}
+
+.channelTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  font-weight: 600;
+  color: #999;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.statistics span {
+  color: #fa8314;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+  padding-inline: 24px;
+  width: clamp(25%, 300px, 40%);
+  gap: 2em;
+  margin-top: 2em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.comments .comment {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  background-color: #040404;
+  border-radius: 10px;
+}
+
+.comment img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.comment h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fa8314;
+}
+
+.comment p {
+  font-size: 0.775rem;
+}
